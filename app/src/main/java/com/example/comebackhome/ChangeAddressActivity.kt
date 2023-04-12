@@ -60,11 +60,13 @@ class ChangeAddressActivity : AppCompatActivity() {
                 if(!result.body().isNullOrEmpty() && result.body()!!.size>0){
                     editor.putString("lat",result.body()!![0].lat)
                     editor.putString("lon",result.body()!![0].lon)
+                    editor.putString("place",result.body()!![0].display_name)
                     editor.commit()
                 }
             }else{
                 Log.i("llamada","No")
             }
         }
+        finish()
     }
 }

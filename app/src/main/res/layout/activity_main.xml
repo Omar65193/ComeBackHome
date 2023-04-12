@@ -8,18 +8,28 @@
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        tilesource="Mapnik"/>
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="dddd" />
 
     <Button
         android:id="@+id/btn_obtain_route"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#D43F1F"
         android:text="@string/obtener_ruta" />
 
     <Button
         android:id="@+id/btn_edit_direction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#D43F1F"
         android:text="@string/editar_direccion" />
 </LinearLayout>
