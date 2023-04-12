@@ -6,12 +6,20 @@
 
     <org.osmdroid.views.MapView
         android:id="@+id/map"
-        android:layout_width="fill_parent"
-        android:layout_height="553dp" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tilesource="Mapnik"/>
 
     <Button
         android:id="@+id/btn_obtain_route"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/obtener_ruta" />
+
+    <Button
+        android:id="@+id/btn_edit_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_direccion" />
 </LinearLayout>
